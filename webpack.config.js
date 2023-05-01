@@ -20,11 +20,11 @@ module.exports = {
   },
 
   plugins: [
-    // Додати новий екземпляр `HtmlWebpackPlugin` для кожного документу
+    
     new HtmlWebpackPlugin({
-      // Встановити шаблон, який буде використовуватися для генерації HTML файлу
+      
       template: './src/pages/index.html',
-      // Встановити ім'я файлу вихідного HTML документу
+      
       filename: 'index.html',
     }),
     new CleanWebpackPlugin(),
@@ -33,7 +33,7 @@ module.exports = {
       filename: 'about.html',
     }),
     new CleanWebpackPlugin(),
-    // Додайте інші сторінки, які потрібно опрацювати
+    
     // ...
   ],
   module: {
@@ -44,7 +44,6 @@ module.exports = {
       },
     ],
   },
-  // Встановіть шлях до каталогу, де будуть зберігатися HTML файли
  
   // ...
 };
